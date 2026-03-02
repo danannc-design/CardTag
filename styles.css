@@ -364,6 +364,59 @@ body {
   padding-bottom: 0;
 }
 
+/* Feedback */
+.feedback {
+  padding: var(--section-padding);
+  background: var(--white);
+}
+
+.feedback-form {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feedback-input,
+.feedback-textarea {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-family: var(--font);
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--off-white);
+  color: var(--dark-grey);
+}
+
+.feedback-input:focus,
+.feedback-textarea:focus {
+  outline: none;
+  border-color: var(--dark-grey);
+  background: var(--white);
+}
+
+.feedback-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.feedback-form .btn {
+  align-self: flex-start;
+}
+
+.feedback-success {
+  max-width: 480px;
+  margin: 0 auto 1.5rem;
+  padding: 1rem 1.25rem;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
 /* CTA */
 .cta {
   padding: 5rem 1.5rem;

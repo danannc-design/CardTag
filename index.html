@@ -169,6 +169,21 @@
       </div>
     </section>
 
+    <section class="feedback" id="feedback">
+      <div class="container">
+        <h2 class="section-title">Send Feedback</h2>
+        <p class="section-subtitle">Help us improve Card Tag. Share your ideas, report bugs, or suggest features.</p>
+        <p class="feedback-success" id="feedback-success" hidden>Thanks! Your feedback has been sent.</p>
+        <form class="feedback-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="Card Tag Feedback">
+          <input type="hidden" name="_next" value="https://www.cardtag.ie/?feedback=success#feedback">
+          <input type="email" name="email" placeholder="Your email (optional)" class="feedback-input">
+          <textarea name="message" placeholder="Your feedback..." class="feedback-textarea" rows="4" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Feedback</button>
+        </form>
+      </div>
+    </section>
+
     <section class="cta" id="download">
       <div class="container">
         <h2 class="cta-title">Ready to label your card photos?</h2>
@@ -196,8 +211,9 @@
             </svg>
           </a>
           <a href="#faq">FAQ</a>
+          <a href="#feedback">Feedback</a>
           <a href="mailto:contact@example.com">Contact</a>
-          <a href="#">Privacy Policy</a>
+          <a href="privacy/">Privacy Policy</a>
           <a href="#">Terms of Use</a>
         </div>
       </div>

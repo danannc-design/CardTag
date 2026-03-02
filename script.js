@@ -3,7 +3,17 @@
 document.addEventListener('DOMContentLoaded', () => {
   initFAQ();
   initGalleryImages();
+  initFeedbackSuccess();
 });
+
+function initFeedbackSuccess() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('feedback') === 'success') {
+    const el = document.getElementById('feedback-success');
+    if (el) el.hidden = false;
+    history.replaceState({}, '', window.location.pathname + window.location.hash);
+  }
+}
 
 function initFAQ() {
   const items = document.querySelectorAll('.faq-item');
